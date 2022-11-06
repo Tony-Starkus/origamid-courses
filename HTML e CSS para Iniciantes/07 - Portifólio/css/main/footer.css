@@ -1,0 +1,51 @@
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+#footer .container {
+  grid-template-columns: 1fr;
+  column-gap: 8rem;
+  background-color: #000;
+}
+
+.footer__text-1 {
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  color: #cccccc;
+}
+
+.contact {
+  color: #fff;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-weight: 700;
+  list-style: none;
+  padding: 0;
+}
+
+.contact__email {
+  margin-bottom: 1.875rem;
+}
+
+.copyright {
+  font-family: 'Inter';
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  #footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__text-1 {
+    padding-top: 1rem;
+    width: 30ch;
+  }
+
+  .contact {
+    font-size: 2.25rem;
+  }
+}

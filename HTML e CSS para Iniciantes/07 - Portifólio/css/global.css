@@ -1,0 +1,26 @@
+body {
+  margin: 2.063rem auto 0rem auto;
+  display: block;
+}
+
+header,
+main,
+#experiencia {
+  max-width: 1600px;
+  display: block;
+  margin: auto;
+}
+
+#experiencia {
+  max-width: 1600px;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+  max-width: 1600px;
+}
+
+h1 {
+  font-size: 4.5rem;
+}

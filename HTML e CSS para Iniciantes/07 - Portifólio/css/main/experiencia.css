@@ -1,0 +1,145 @@
+#experiencia {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 8rem;
+  margin-top: 7.5rem;
+  margin: 0 1rem;
+}
+
+#experiencia__container__title {
+  display: inline-flex;
+  font-family: 'Fira Sans';
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.experiencia__paragraph {
+  font-family: 'Fira Sans';
+  line-height: 2rem;
+  color: #292929;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.experiencia-article {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #292929;
+  border-radius: 1rem 1rem 0.313rem 0.313rem;
+  margin-bottom: 3.125rem;
+}
+
+.experiencia-article__infos {
+  background-color: #f0f0f0;
+  padding: 1.25rem;
+  border-radius: 0.313rem;
+  position: relative;
+}
+
+.experiencia-article__infos__year {
+  position: absolute;
+  color: #525252;
+  font-family: 'Fira Sans';
+  top: -2.3rem;
+}
+
+.experiencia-article__infos__year__container__floating_bar {
+  position: absolute;
+  width: 2rem;
+  height: 0.25rem;
+  top: -1.25rem;
+  background: linear-gradient(180deg, rgba(67, 187, 255, 1) 0%, rgba(33, 170, 248, 1) 100%);
+}
+
+.experiencia-article__infos__responsibility,
+.experiencia-article__infos__company,
+.experiencia-article__infos__description {
+  margin: 0rem;
+}
+
+.experiencia-article__infos__responsibility,
+.experiencia-article__infos__company {
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+.experiencia-article__infos__responsibility {
+  color: #6a6a6a;
+  font-size: 0.875rem;
+}
+
+.experiencia-article__infos__company {
+  font-size: 1.125rem;
+  margin: 0.063rem 0rem 0.625rem 0rem;
+}
+
+.experiencia-article__infos__description {
+  font-family: 'Fira Sans';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.experiencia-article__ul__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin: 0rem;
+  padding: 1.25rem;
+}
+
+.experiencia-article__ul__tags__item {
+  display: flex;
+  font-family: 'Fira Sans';
+  align-items: center;
+  padding: 0rem 0.625rem;
+  background-color: #fff;
+  border-radius: 0.313rem;
+  height: 2rem;
+}
+
+@media (min-width: 992px) {
+  #experiencia {
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+  }
+
+  #experiencia__container__title {
+    display: initial;
+    position: relative;
+    font-size: 9rem;
+    max-width: 22.5rem;
+  }
+
+  #experiencia__container__title__text1 {
+    position: absolute;
+    left: -4rem;
+  }
+
+  .experiencia__paragraph {
+    text-align: initial;
+  }
+
+  .experiencia-article {
+    grid-template-columns: 2fr 1fr;
+    border-radius: 1rem 0.313rem 0.313rem 1rem;
+  }
+
+  .experiencia-article__infos__year__container__floating_bar {
+    top: 0rem;
+    left: -1.5rem;
+    width: 0.25rem;
+    height: 100%;
+  }
+
+  .experiencia-article__infos__year {
+    position: absolute;
+    top: 0rem;
+    left: -8rem;
+    width: 5rem;
+    text-align: right;
+  }
+}
