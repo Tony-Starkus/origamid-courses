@@ -1,0 +1,11 @@
+$preto: #999;
+
+div {
+  background: $preto;
+  width: 200px;
+  height: 200px;
+
+  a {
+    background-color: pink;
+  }
+}
